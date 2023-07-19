@@ -84,7 +84,7 @@ align-items: center;
     text-align: center;
     width: 50%;
     background-image: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
-    
+
     
 }
 .banner-content h2{
@@ -136,14 +136,110 @@ margin-bottom: 20px;
 background: #4EC5F7;
 }
 
-
-
-
-
-
-
-
 /* banner styles ends here */
+
+/* online games styles starts here */
+
+.online-game-container{
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+.online-game-title{
+    color: #0B0223;
+text-align: right;
+font-size: 48px;
+font-weight: 700;
+
+}
+.online-game-description{
+    color: #534C64;
+text-align: center;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+}
+.game-card{
+    border-radius: 16px;
+}
+.game-card-desc{
+    color: #534C64;
+font-size: 15px;
+font-weight: 300;
+}
+
+.funny-vid{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 48px;
+font-weight: 700;
+}
+/* online games styles ends here */
+
+/* image section styles starts here */
+.image-content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.img-content{
+    text-align: center;
+    width: 35%;
+}
+
+.position-card{
+    position: relative;
+}
+
+.small-img{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 70%;
+    bottom: 0;
+
+}
+.img-content h2{
+text-align: right;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px; /* 125% */
+}
+.img-card-desc{
+    color: #534C64;
+text-align: right;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+}
+.instant{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+/* image section styles ends here */
 
 
 /* responsive style */
@@ -170,7 +266,18 @@ background: #4EC5F7;
     .banner-img , .banner-content{
         width: 100% ;
     }
-    
+    .online-game-container{
+        flex-direction: column;
+    }
+    .image-content-container{
+        flex-direction: column;
+    }
+    .position-card img{
+        width: 100%;
+    }
+    .img-content{
+        width: auto;
+    }
 }
 
 /* for tablet */
@@ -189,5 +296,17 @@ background: #4EC5F7;
     }
     .banner-container{
         flex-direction: column;
+    }
+    .online-game-container{
+        flex-direction: column;
+    }
+    .image-content-container{
+        flex-direction: column;
+    }
+    .position-card img{
+        width: 100%;
+    }
+    .img-content{
+        width: auto;
     }
 }

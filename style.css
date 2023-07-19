@@ -435,6 +435,12 @@ margin-top: 80px;
     .footer-container{
         width: auto;
     }
+    .img-card-desc{
+        text-align: center;
+    }
+    .img-content-title{
+        text-align: center;
+    }
    
    
 }
@@ -470,5 +476,11 @@ margin-top: 80px;
     }
     .game-type-container{
         width: auto;
+    }
+    .img-card-desc{
+        text-align: center;
+    }
+    .img-content-title{
+        text-align: center;
     }
 }

@@ -6,12 +6,10 @@ font-family: 'Work Sans', sans-serif;
 /* navbar styles starts here */
 .nav-container{
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     max-width: 1400px;
     min-height: 50px;
     margin: 0 auto;
-    
 }
 .main-nav{
     background: #FFF;
@@ -58,7 +56,7 @@ background-clip: text;
     border-radius: 8px;
 background: rgba(11, 2, 35, 0.10);
 padding: 20px 18px;
-width: 262px;
+width: 300px;
 flex-shrink: 0;
 text-align: center;
 display: flex;
@@ -234,8 +232,8 @@ background-clip: text;
 
 /* image section styles ends here */
 
-/* button section styles starts here */
-.button-container{
+/* game type section styles starts here */
+.game-type-container{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     min-height: 300px;
 }
@@ -275,6 +273,70 @@ font-weight: 600;
 }
 
 
+/* game type section styles ends here */
+
+/* footer styles starts here */
+.footer-container{
+    background: #0B0223;
+    min-height: 600px;
+
+
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-logo p{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+}
+.footer-text{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    color: #FFF;
+text-align: center;
+font-size: 20px;
+font-weight: 600;
+flex-wrap: wrap;
+
+}
+.footer-icon{
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto;
+    height: 60px;
+    color: white;
+}
+.foot-icon{
+    gap: 30px;
+    padding: 30px;
+    font-size: 50px;
+}
+.terms-privacy{
+    margin-top: 80px;
+    color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+display: flex;
+justify-content: center;
+gap: 80px;
+flex-wrap: wrap;
+}
+.copyright{
+color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+margin-top: 80px;
+}
 
 
 
@@ -284,7 +346,8 @@ font-weight: 600;
 
 
 
-/* button section styles ends here */
+
+/* footer styles ends here  */
 
 
 /* responsive style */
@@ -331,6 +394,11 @@ font-weight: 600;
     .game-type{
         padding: 20px;
     }
+    .footer-container{
+        width: auto;
+    }
+   
+   
 }
 
 /* for tablet */
@@ -362,7 +430,7 @@ font-weight: 600;
     .img-content{
         width: auto;
     }
-    .button-container{
+    .game-type-container{
         width: auto;
     }
 }

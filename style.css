@@ -66,6 +66,10 @@ align-items: center;
 .fa-brands{
     font-size: 30px
 }
+.fa-brands:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 4px black ;
+}
 /* navbar styles ends here */
 
 /* banner styles starts here */
@@ -83,8 +87,6 @@ align-items: center;
     width: 50%;
     background-image: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
     margin: 0 auto;
-
-    
 }
 .banner-content h2{
     color: #0B0223;
@@ -129,6 +131,11 @@ align-items: flex-start;
 gap: 10px;
 margin-top: 20px;
 margin-bottom: 20px;
+}
+.banner-btn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    box-shadow: 2px 2px 4px black ;
 }
 #Rogue{
     border-radius: 48px;
@@ -175,6 +182,15 @@ font-weight: 300;
 
     position: relative;
     /* border-radius: 16px; */
+    display: inline-flex;
+    align-items: center;
+    
+}
+
+.game-card-img:hover{
+
+    opacity: 0.6;
+    box-shadow: 2px 2px 6px black ;
 }
 
 .icon-container{
@@ -183,19 +199,21 @@ font-weight: 300;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0; 
-    transition: opacity 0.3s;
     text-align: center;
-
 }
-.play-btn:hover .icon-container {
-    opacity: 1; /* Show on hover */
-  }
-.icon{
 
+
+.play-btn:hover .icon-container {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+.icon{
   font-size: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 5px;
+  font-weight: bolder;
+  /* background-color: black; */
 }
 
 .watch{
@@ -205,8 +223,8 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 text-align: center;
 font-size: 20px;
-font-weight: 1000;
 border: 2px solid brown;
+font-weight: bolder;
 }
 .funny-vid{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -276,13 +294,14 @@ background-clip: text;
     min-height: 300px;
 }
 
+
 .game-type{
-    border-radius: 60px;
+border-radius: 60px;
 display: flex;
 gap: 10px;
 margin: 0 auto;
 background-color: white;
-padding: 10px;
+padding-left: 10px;
 }
 .game-type:hover{
     border: 1px solid palevioletred;
@@ -345,6 +364,16 @@ font-weight: 600;
 flex-wrap: wrap;
 
 }
+.footer-text:hover{
+    cursor: pointer;
+
+}
+.hover-text:hover{
+    color: red;
+    opacity: 0.8;
+    box-shadow: 2px 2px 4px black;
+
+}
 .footer-icon{
     text-align: center;
     padding-top: 20px;
@@ -367,6 +396,14 @@ display: flex;
 justify-content: center;
 gap: 80px;
 flex-wrap: wrap;
+}
+.terms-privacy:hover{
+    cursor: pointer;
+
+}
+.hover-term:hover{
+    
+    color: chartreuse;
 }
 .copyright{
 color: rgba(255, 255, 255, 0.60);
@@ -398,6 +435,7 @@ margin-top: 80px;
     }
     .nav-title{
         flex-direction: column;
+        gap: 10px;
         
     }
     .nav-title a{
@@ -441,6 +479,9 @@ margin-top: 80px;
     .img-content-title{
         text-align: center;
     }
+    
+    
+    
    
    
 }
@@ -483,4 +524,5 @@ margin-top: 80px;
     .img-content-title{
         text-align: center;
     }
+    
 }
